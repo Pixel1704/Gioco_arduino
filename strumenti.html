@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strumenti - Neuroville</title>
+    <meta name="description" content="EEG e FFT: gli strumenti per ascoltare il cervello">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🧠</div>
+                Neuro<span>ville</span>
+            </a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gioco.html">Il Gioco</a></li>
+                <li><a href="cervello.html">Il Cervello</a></li>
+                <li><a href="strumenti.html" class="active">Strumenti</a></li>
+                <li><a href="frequenze.html">Frequenze</a></li>
+                <li><a href="metodo.html">Metodo</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>📡 Strumenti</h1>
+                <p>EEG e FFT: gli strumenti per "ascoltare" il cervello</p>
+            </div>
+        </section>
+
+        <!-- EEG Section -->
+        <section class="section">
+            <div class="container">
+                <a href="index.html" class="back-link">← Torna alla Home</a>
+                
+                <div class="section-title">
+                    <h2>EEG - Elettroencefalografia</h2>
+                    <p>La tecnologia che ci permette di ascoltare l'attività cerebrale</p>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card eeg-card">
+                        <h3>🎧 Cos'è l'EEG?</h3>
+                        <p><strong>L'Elettroencefalografia</strong> è una tecnica che registra l'attività elettrica del cervello. Piccoli sensori, chiamati elettrodi, vengono posizionati sulla testa.</p>
+                        <p>Questi sensori "ascoltano" il <span class="highlight">rumore elettrico collettivo</span> delle luci dei neuroni. È come ascoltare un'orchestra che suona tutti gli strumenti insieme!</p>
+                    </div>
+                    <div class="card eeg-card">
+                        <h3>🔬 Come Funziona</h3>
+                        <p>Gli elettrodi rilevano le piccole correnti elettriche generate dai neuroni quando comunicano tra loro. Questi segnali vengono amplificati e trasformati in dati che possiamo analizzare.</p>
+                        <p>Il risultato è un tracciato che mostra le onde cerebrali in tempo reale.</p>
+                    </div>
+                    <div class="card eeg-card">
+                        <h3>⚙️ Hardware Utilizzato</h3>
+                        <p>Nel nostro progetto utilizziamo:</p>
+                        <ul>
+                            <li><strong>Arduino:</strong> Il microcontroller che elabora i dati</li>
+                            <li><strong>BioAmp EXG Pill:</strong> Un amplificatore specializzato per segnali biologici</li>
+                            <li><strong>Elettrodi:</strong> Sensori dry o wet per rilevare i segnali</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FFT Section -->
+        <section class="section alt-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>FFT - Fast Fourier Transform</h2>
+                    <p>La "Maga FFT" che separa le onde cerebrali</p>
+                </div>
+
+                <div class="story-box">
+                    <h3>🧙‍♀️ Il Problema</h3>
+                    <p>L'EEG registra un segnale unico che contiene <strong>tutte le onde cerebrali mescolate insieme</strong>. È come un frullato di frutta: sai che c'è dentro, ma non riesci a distinguere i singoli ingredienti.</p>
+                    
+                    <h3>✨ La Soluzione</h3>
+                    <p>La <strong>Fast Fourier Transform (FFT)</strong> è un algoritmo matematico che fa proprio questo: separa le onde miste nelle loro componenti individuali.</p>
+                    <p>La FFT risponde: "Aspetta... dentro quest'onda ci sono 5 onde diverse mescolate! Ecco la banana, ecco la fragola, ecco il latte..."</p>
+                    
+                    <h3>📊 Il Risultato</h3>
+                    <p>Possiamo così capire:</p>
+                    <ul>
+                        <li>Quanta onda Delta c'è (sonno profondo)</li>
+                        <li>Quanta onda Theta c'è (rilassamento)</li>
+                        <li>Quanta onda Alfa c'è (stato calmo)</li>
+                        <li>Quanta onda Beta c'è (concentrazione)</li>
+                        <li>Quanta onda Gamma c'è (alta attività)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analogy Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>🍹 L'Analogia del Frullato</h2>
+                    <p>Capire EEG e FFT in modo semplice</p>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🥤 Il Segnale Grezzo</h3>
+                        <p>Immagina di avere un frullato di frutta. Il frullato è il segnale grezzo dell'EEG: un misto di tutti gli ingredienti.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🔪 La FFT</h3>
+                        <p>La FFT è come un super analizzatore che guarda nel frullato e dice: "Qui c'è banana, qui c'è fragola, qui c'è latte, qui c'è ghiaccio..."</p>
+                    </div>
+                    <div class="card">
+                        <h3>📈 Le Proporzioni</h3>
+                        <p>La FFT non solo identifica gli ingredienti, ma dice anche <strong>in che quantità</strong> ciascuno è presente. Questo corrisponde alla variazione di stato mentale!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Use It -->
+        <section class="section alt-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>🎮 Come lo Usiamo nel Gioco</h2>
+                    <p>Dalla teoria alla pratica</p>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Rilevamento</h3>
+                            <p>Il BioAmp rileva i segnali EEG dal cuoio capelluto del Giocatore B</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Elaborazione</h3>
+                            <p>Arduino legge i valori grezzi e li prepara per l'analisi</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Analisi FFT</h3>
+                            <p>Il software applica la FFT per separare le onde cerebrali</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Interpretazione</h3>
+                            <p>Il sistema determina se B è concentrato o rilassato in base alle onde dominanti</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Azione</h3>
+                            <p>Il risultato influenza elementi del gioco in tempo reale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="quote-box">
+                    <p>"La tecnologia ci permette di dialogare con il nostro cervello in modi che prima erano impensabili"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <div class="logo-icon">🧠</div>
+            Neuro<span>ville</span>
+        </div>
+        <p>Progetto realizzato con passione, curiosità e la volontà di esplorare le infinite possibilità della mente umana.</p>
+        <p style="margin-top: 1rem; font-size: 0.875rem;">Attività pomeridiana di Orientamento</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
